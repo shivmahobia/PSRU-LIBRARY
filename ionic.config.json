@@ -1,0 +1,7 @@
+{
+  "name": "PRSU_LIBRARY",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

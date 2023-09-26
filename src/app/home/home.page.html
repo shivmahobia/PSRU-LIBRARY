@@ -1,0 +1,199 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-img src="assets/icon/logo.png" class="logo"></ion-img>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <div class="news-container" >
+    <div class="title" >
+        Notification
+    </div>
+
+    <ul>
+        <li *ngFor="let data of items" (click)="pdf(data.fileupload)">
+          <a >{{data.title}}</a>
+        </li>
+        
+    </ul>
+</div>
+
+<app-banner [slides]="slides"></app-banner>
+
+<ion-row>
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+            <a (click)="opac()" >
+              <img src="assets/icons/search.svg" />
+            </a>
+            <h6 (click)="opac()"><b>OPAC</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="ebook()" >
+            <img src="assets/icons/ebook.svg" />
+          </a>
+          <h6 (click)="ebook()"><b>E-BOOK</b></h6>
+      </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="ejournal()" >
+            <img src="assets/icons/journal.svg" />
+          </a>
+          <h6 (click)="ejournal()"><b>E-journal</b></h6>
+      </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="e_database()" >
+            <img src="assets/icons/database.svg" />
+          </a>
+          <h6 (click)="e_database()"><b>E-Database</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="ndl()" >
+            <img src="assets/icons/ndl.png" />
+          </a>
+          <h6 (click)="ndl()"><b>NDL</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="ethesis()" >
+            <img src="assets/icons/thesis.svg" />
+          </a>
+          <h6 (click)="ethesis()"><b>E-Thesis</b></h6>
+      </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col> 
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="government()" >
+            <img src="assets/icons/govern.png" />
+          </a>
+          <h6 (click)="government()"><b>Government Data</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="e_pg_phatashala()" >
+            <img src="assets/icons/epg.png" />
+          </a>
+          <h6 (click)="e_pg_phatashala()"><b>E-PG Phatashala</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="sodh_gangotri()" >
+            <img src="assets/icons/shodhgangotri.png" />
+          </a>
+          <h6 (click)="sodh_gangotri()"><b>Shodh Gangotri</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="sodh_ganga()" >
+            <img src="assets/icons/ganga.png" />
+          </a>
+          <h6 (click)="sodh_ganga()"><b>Shodh Ganga</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+  
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="e_gyanKosh()" >
+            <img src="assets/icons/egyankosh.png" />
+          </a>
+          <h6 (click)="e_gyanKosh()"><b>E-GyanKosh</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="jgateplus()" >
+            <img src="assets/icons/jgate.png" />
+          </a>
+          <h6 (click)="jgateplus()"><b>Jgateplus</b></h6>
+      </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col> 
+
+  <ion-col  size="6">
+    <ion-card>
+      <ion-card-header>
+        <div align="center">
+          <a (click)="knimbus()" >
+            <img src="assets/icons/kni.png" />
+          </a>
+          <h6 (click)="knimbus()"><b>Knimbus &nbsp;&nbsp;</b></h6>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-col>
+
+</ion-row>
+</ion-content>
