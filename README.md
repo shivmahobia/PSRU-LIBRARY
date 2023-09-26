@@ -4,7 +4,8 @@
 
 A Mobile application for Sundar Lal Sharma Library at Pt. Ravishankar Shukla University Raipur.
 
-## apk link
+## Download APK Here
+[Link](https://github.com/shivmahobia/PSRU-LIBRARY/PRSU.apk)
 
 ## Screenshots
 
